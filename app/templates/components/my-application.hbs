@@ -23,5 +23,8 @@
 {{/each}}
 
 <div class="col-md-8 col-md-offset-2">
+  {{#if isAuthenticated}}
+    {{home-page}}
+  {{/if}}
   {{outlet}}
 </div>
