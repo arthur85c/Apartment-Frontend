@@ -1,3 +1,4 @@
+
 <h3> New Listing Form</h3>
 <form {{action 'createList' on='submit'}}>
   <div class="form-group">
@@ -6,37 +7,27 @@
 </div>
 <div class="form-group">
   <label>House Number</label>
-  {{input type="text" class="form-control" value=newList.number placeholder="e.g. 12A, 54"}}
+  {{input type="text" class="form-control" value=newList.houseno placeholder="e.g. 12A, 54"}}
 </div>
 <div class="form-group">
   <label>Street name</label>
-  {{input type="text" class="form-control" value=newList.stName placeholder="e.g. Spooner St."}}
+  {{input type="text" class="form-control" value=newList.stname placeholder="e.g. Spooner St."}}
 </div>
 <div class="form-group">
   <label>Zip Code</label>
   {{input type="text" class="form-control" value=newList.zipcode placeholder="e.g. 02215"}}
 </div>
 <div class="form-group">
-      <label for="inputState">Boston Area</label>
-      <select id="inputState" value=newList.area class="form-control">
-        <option value="South End">South End</option>
-        <option value="Downtown">Downtown</option>
-        <option value="North End">North End</option>
-        <option value="Chinatown-Leather District">Chinatown-Leather District</option>
-        <option value="Beacon Hill">Beacon Hill</option>
-        <option value="BackBay">BackBay</option>
-        <option value="Fenway-Kenmore">Fenway-Kenmore</option>
-        <option value="Charlston">Charlston</option>
-        <option value="Cambridge">Cambridge</option>
-      </select>
+  <label>Area</label>
+  {{input type="text" class="form-control" value=newList.area placeholder="e.g. Fenway/Kenmore, Northend, Backbay"}}
 </div>
 <div class="form-group">
   <label>Start date</label>
-  {{input type="date" class="form-control" value=newList.dateStart placeholder="Another input"}}
+  {{input type="date" class="form-control" value=newList.startdate placeholder="Another input"}}
 </div>
 <div class="form-group">
   <label>End Date</label>
-  {{input type="date" class="form-control" value=newList.dateEnd placeholder="Another input"}}
+  {{input type="date" class="form-control" value=newList.enddate placeholder="Another input"}}
 </div>
   <button type='submit'>Submit New Listing</button>
 </form>

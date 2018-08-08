@@ -2,12 +2,12 @@ import DS from 'ember-data'
 
 export default DS.Model.extend({
   name: DS.attr('string'),
-  dateStart: DS.attr('date'),
-  dateEnd: DS.attr('date'),
+  startdate: DS.attr('string'),
+  enddate: DS.attr('string'),
   price: DS.attr('number'),
   email: DS.attr('string'),
   area: DS.attr('string'),
-  number: DS.attr('number'),
-  stName: DS.attr('string'),
+  houseno: DS.attr('number'),
+  stname: DS.attr('string'),
   zipcode: DS.attr('number')
 })
