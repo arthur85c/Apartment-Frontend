@@ -6,6 +6,8 @@
   {{#navbar.content}}
     {{#navbar.nav class='navbar-right' as |nav|}}
       {{#if isAuthenticated}}
+      {{#nav.item}}{{#nav.link-to "apartments"}}Apartments{{/nav.link-to}}{{/nav.item}}
+      {{#nav.item}}{{#nav.link-to "list"}}List New Apartment{{/nav.link-to}}{{/nav.item}}
         {{#nav.item}}{{#nav.link-to "change-password"}}Change Password{{/nav.link-to}}{{/nav.item}}
         {{#nav.item}}<a href="#" {{action "signOut"}}>Sign Out</a>{{/nav.item}}
       {{else}}
@@ -15,16 +17,16 @@
     {{/navbar.nav}}
   {{/navbar.content}}
 {{/bs-navbar}}
-
-<h1>Welcome to Ember!</h1>
+<div class="main">
+{{#if isAuthenticated}}
+  {{home-page}}
+{{/if}}
 
 {{#each flashMessages.queue as |flash|}}
   {{flash-message flash=flash}}
 {{/each}}
 
-<div class="col-md-8 col-md-offset-2">
-  {{#if isAuthenticated}}
-    {{home-page}}
-  {{/if}}
+<div class="col-md-12">
   {{outlet}}
+</div>
 </div>

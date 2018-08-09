@@ -1,6 +1,12 @@
 {{#each model as |apartment|}}
 <div class="cards">
 {{house-avaliable apartment=apartment}}
-<button class="btn btn-primary" {{action 'goToList' apartment}}>Click Me</button>
+{{#if apartment.editable}}
+<button class="btn btn-primary" {{action 'goToList' apartment}}>More Info</button>
+<button class="btn btn-warning" {{action 'update' apartment}}>Update</button>
+<button class="btn btn-danger" {{action 'delete' apartment}}>Delete</button>
+{{else}}
+<button class="btn btn-primary" {{action 'goToList' apartment}}>More Info</button>
+{{/if}}
 </div>
 {{/each}}

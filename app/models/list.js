@@ -10,5 +10,6 @@ export default DS.Model.extend({
   houseno: DS.attr('number'),
   stname: DS.attr('string'),
   zipcode: DS.attr('number'),
-  city: DS.attr('string')
+  city: DS.attr('string'),
+  editable: DS.attr('boolean')
 })
