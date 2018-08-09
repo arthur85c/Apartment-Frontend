@@ -8,10 +8,24 @@
 }
 
 .cards {
-  float: left;
+  display: inline-block;
   text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 img {
   width: 150px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.main {
+  text-align: center;
 }

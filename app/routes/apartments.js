@@ -7,6 +7,10 @@ export default Route.extend({
   actions: {
     goToList (list) {
       this.transitionTo('apartment', list.id)
+    },
+    delete (apartment) {
+      apartment.destroyRecord()
+      .then(() => this.refresh())
     }
   }
 })

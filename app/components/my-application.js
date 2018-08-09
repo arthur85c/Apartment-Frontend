@@ -6,6 +6,7 @@ export default Component.extend({
   auth: service(),
 
   user: alias('auth.credentials.email'),
+  id: alias('auth.credentials.id'),
   isAuthenticated: alias('auth.isAuthenticated'),
 
   actions: {
