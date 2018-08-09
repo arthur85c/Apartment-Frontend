@@ -1,0 +1,6 @@
+{{#each model as |apartment|}}
+<div class="cards">
+{{house-avaliable apartment=apartment}}
+<button class="btn btn-primary" {{action 'goToList' apartment}}>Click Me</button>
+</div>
+{{/each}}
