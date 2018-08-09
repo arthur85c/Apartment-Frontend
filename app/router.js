@@ -12,6 +12,7 @@ Router.map(function () {
   this.route('change-password')
   this.route('apartments')
   this.route('list')
+  this.route('apartment', {path: 'apartments/:apartment_id'})
 })
 
 export default Router

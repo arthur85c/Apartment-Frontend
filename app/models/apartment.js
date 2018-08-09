@@ -1,4 +1,4 @@
-import DS from 'ember-data'
+import DS from 'ember-data';
 
 export default DS.Model.extend({
   name: DS.attr('string'),
@@ -10,5 +10,6 @@ export default DS.Model.extend({
   houseno: DS.attr('number'),
   stname: DS.attr('string'),
   zipcode: DS.attr('number'),
-  city: DS.attr('string')
+  city: DS.attr('string'),
+  apartment: DS.belongsTo('apartment')
 })

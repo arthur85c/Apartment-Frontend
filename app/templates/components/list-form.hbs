@@ -2,18 +2,22 @@
 <h3> New Listing Form</h3>
 <form {{action 'createList' on='submit'}}>
   <div class="form-group">
-  <label>name</label>
+  <label>Title</label>
   {{input type="text" class="form-control" value=newList.name placeholder="e.g. 1 bed 1 bath near Fenway"}}
 </div>
-<div class="form-group">
-  <label>House Number</label>
-  {{input type="text" class="form-control" value=newList.houseno placeholder="e.g. 12A, 54"}}
+<div class="form-group col-md-2">
+  <label>House No.</label>
+  {{input type="text" class="form-control" value=newList.houseno placeholder="e.g. 12, 54"}}
 </div>
-<div class="form-group">
+<div class="form-group col-md-4">
   <label>Street name</label>
   {{input type="text" class="form-control" value=newList.stname placeholder="e.g. Spooner St."}}
 </div>
-<div class="form-group">
+<div class="form-group col-md-3">
+  <label>City</label>
+  {{input type="text" class="form-control" value=newList.city placeholder="e.g. Boston"}}
+</div>
+<div class="form-group col-md-3">
   <label>Zip Code</label>
   {{input type="text" class="form-control" value=newList.zipcode placeholder="e.g. 02215"}}
 </div>
