@@ -11,6 +11,9 @@ export default Route.extend({
     delete (apartment) {
       apartment.destroyRecord()
       .then(() => this.refresh())
+    },
+    update (list) {
+      list.save()
     }
   }
 })
