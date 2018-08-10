@@ -11,10 +11,10 @@ Apartment is a short term apartment reantal service that connects renters to peo
 </ul>
 
 <p>
-Backend-API REPO: https://github.com/arthur85c/Apartment-Backend
-Backend Deployed API: https://secret-shore-87998.herokuapp.com
-Frontend REPO: https://github.com/arthur85c/Apartment-Frontend
-Frontend Deployed: https://arthur85c.github.io/Apartment-Frontend/
+Backend-API REPO: https://github.com/arthur85c/Apartment-Backend<br>
+Backend Deployed API: https://secret-shore-87998.herokuapp.com<br>
+Frontend REPO: https://github.com/arthur85c/Apartment-Frontend<br>
+Frontend Deployed: https://arthur85c.github.io/Apartment-Frontend/<br>
 </p>
 
 <h2>Technologies Used</h2>
