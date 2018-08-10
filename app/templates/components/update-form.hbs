@@ -1,0 +1,37 @@
+
+<h3> Update your listing</h3>
+<form {{action 'update' on='submit'}}>
+  <div class="form-group">
+  <label>Title</label>
+  {{input type="text" class="form-control" value=apartment.name placeholder="e.g. 1 bed 1 bath near Fenway"}}
+</div>
+<div class="form-group col-md-2">
+  <label>House No.</label>
+  {{input type="text" class="form-control" value=apartment.houseno placeholder="e.g. 12, 54"}}
+</div>
+<div class="form-group col-md-4">
+  <label>Street name</label>
+  {{input type="text" class="form-control" value=apartment.stname placeholder="e.g. Spooner St."}}
+</div>
+<div class="form-group col-md-3">
+  <label>City</label>
+  {{input type="text" class="form-control" value=apartment.city placeholder="e.g. Boston"}}
+</div>
+<div class="form-group col-md-3">
+  <label>Zip Code</label>
+  {{input type="text" class="form-control" value=apartment.zipcode placeholder="e.g. 02215"}}
+</div>
+<div class="form-group">
+  <label>Area</label>
+  {{input type="text" class="form-control" value=apartment.area placeholder="e.g. Fenway/Kenmore, Northend, Backbay"}}
+</div>
+<div class="form-group">
+  <label>Start date</label>
+  {{input type="date" class="form-control" value=apartment.startdate placeholder="Another input"}}
+</div>
+<div class="form-group">
+  <label>End Date</label>
+  {{input type="date" class="form-control" value=apartment.enddate placeholder="Another input"}}
+</div>
+  <button class='btn-primary' type='submit'>Submit</button>
+</form>

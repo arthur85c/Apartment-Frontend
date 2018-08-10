@@ -13,6 +13,7 @@ Router.map(function () {
   this.route('apartments')
   this.route('list')
   this.route('apartment', {path: 'apartments/:apartment_id'})
+  this.route('update', {path: 'update/:apartment_id'})
 })
 
 export default Router

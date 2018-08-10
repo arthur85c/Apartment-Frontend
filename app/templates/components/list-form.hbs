@@ -21,15 +21,23 @@
   <label>Zip Code</label>
   {{input type="text" class="form-control" value=newList.zipcode placeholder="e.g. 02215"}}
 </div>
-<div class="form-group">
+<div class="form-group col-md-3">
   <label>Area</label>
   {{input type="text" class="form-control" value=newList.area placeholder="e.g. Fenway/Kenmore, Northend, Backbay"}}
 </div>
-<div class="form-group">
+<div class="form-group col-md-3">
+  <label>Contact Email</label>
+  {{input type="email" class="form-control" value=newList.email placeholder="e.g. Your email"}}
+</div>
+<div class="form-group col-md-2">
+  <label>Price / day (w/o the $)</label>
+  {{input type="text" class="form-control" value=newList.price placeholder="e.g. 145, 130, 3"}}
+</div>
+<div class="form-group col-md-2">
   <label>Start date</label>
   {{input type="date" class="form-control" value=newList.startdate placeholder="Another input"}}
 </div>
-<div class="form-group">
+<div class="form-group col-md-2">
   <label>End Date</label>
   {{input type="date" class="form-control" value=newList.enddate placeholder="Another input"}}
 </div>
