@@ -40,3 +40,6 @@ I originally wanted to have multiple connected tables to let people can do the w
   <li>https://imgur.com/a/tPkcpXh</li>
   <li>https://imgur.com/a/2iHrO34</li>
 </ul>
+
+<h2>Snapshot</h2>
+https://imgur.com/a/tRN21Lf
